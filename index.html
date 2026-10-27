@@ -68,6 +68,11 @@
   h2 { font-size: clamp(27px, 3.8vw, 38px); margin: 0 0 8px; text-align: center; font-weight: 800; }
   .sub { text-align: center; color: var(--ink2); margin: 0 auto 30px; max-width: 600px; }
 
+  .desk { background: linear-gradient(160deg, #12301f, var(--surface)); border: 2px solid var(--border); border-radius: 28px; padding: 28px; }
+  .desk p { color: var(--ink2); margin: 6px 0 10px; }
+  .desk ul { margin: 0 0 20px; padding: 0; list-style: none; }
+  .desk li { padding: 3px 0; font-weight: 700; }
+  .desk li::before { content: '✓'; color: var(--green); font-weight: 800; margin-inline-end: 8px; }
   .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
   .card { background: var(--surface); border: 2px solid var(--border); border-radius: var(--radius); padding: 22px; }
   .card .ico { width: 60px; height: 60px; border-radius: 15px; display: grid; place-items: center; font-size: 27px; margin-bottom: 12px; background: var(--green-soft); }
@@ -133,7 +138,7 @@
 <div class="wrap">
   <header class="bar">
     <a class="brand" href="#"><img src="img/favicon.png" alt="">محلل الوضعيات</a>
-    <nav><a href="#exercises">التمارين</a><a href="#features">المزايا</a><a href="#install">التثبيت</a></nav>
+    <nav><a href="#exercises">التمارين</a><a href="#features">المزايا</a><a href="#desktop">نسخة الكمبيوتر</a><a href="#install">التثبيت</a></nav>
   </header>
 
   <main>
@@ -148,9 +153,29 @@
         </a>
         <div class="meta"><span>مجاني</span><span>أندرويد 7.0 فأعلى</span><span>يعمل بدون إنترنت</span></div>
         <p class="old"><a href="https://github.com/yousefdd/posture-analyzer-app/releases/latest/download/PostureAnalyzer-32bit.apk">هاتف قديم؟ حمّل نسخة 32-bit</a></p>
+        <p class="old"><a href="app/">💻 على الكمبيوتر؟ افتح نسخة الكمبيوتر</a></p>
       </div>
       <div class="phone"><img src="img/home.webp" alt="الشاشة الرئيسية في محلل الوضعيات"></div>
     </div>
+
+    <section id="desktop">
+      <div class="desk">
+        <div>
+          <h2 style="text-align:start">نسخة الكمبيوتر 💻</h2>
+          <p>نفس التطبيق ونفس التصميم على ويندوز وماك، بكاميرا الكمبيوتر. سجّل الدخول بإيميلك وكلمة مرورك، فتُحفظ جلساتك في حسابك وتجدها من أي كمبيوتر.</p>
+          <ul>
+            <li>تحليل مباشر بكاميرا الكمبيوتر، وتحليل ملف فيديو</li>
+            <li>تسجيل فيديو الجلسة وتنزيله</li>
+            <li>حساب بالإيميل وكلمة المرور، مع «نسيت كلمة المرور؟»</li>
+            <li>يُثبَّت كتطبيق على سطح المكتب من زر التثبيت في Chrome أو Edge</li>
+          </ul>
+          <a class="btn" href="app/">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+            <span>افتح نسخة الكمبيوتر<small>Chrome أو Edge</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <section id="exercises">
       <h2>ثلاثة تحليلات في تطبيق واحد</h2>
