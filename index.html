@@ -57,6 +57,11 @@
   .meta span:first-child::before { content: none; }
   .old { margin: 10px 0 0; font-size: 14px; font-weight: 700; }
   .old a { color: var(--ink3); }
+  .inst { display: flex; align-items: center; gap: 12px; margin: 0 0 18px; color: var(--ink2); font-size: 14.5px; font-weight: 700; line-height: 1.45; }
+  .inst img { width: 64px; height: 64px; border-radius: 50%; background: #fff; flex: none; box-shadow: 0 6px 22px #0006; }
+  .inst b { color: var(--ink); display: block; font-size: 15.5px; }
+  footer .inst { justify-content: center; margin: 0 0 14px; }
+  footer .inst img { width: 76px; height: 76px; }
 
   .phone {
     justify-self: center; width: min(300px, 78vw); aspect-ratio: 390/844; border-radius: 40px; padding: 10px;
@@ -144,6 +149,7 @@
   <main>
     <div class="hero">
       <div>
+        <div class="inst"><img src="img/istaps_logo.png" alt="شعار معهد علوم وتقنيات النشاطات البدنية والرياضية" onerror="this.parentNode.style.display='none'"><span><b>معهد علوم وتقنيات النشاطات البدنية والرياضية</b>جامعة العربي التبسي – تبسة</span></div>
         <img class="hero-icon" src="img/icon.webp" alt="شعار محلل الوضعيات">
         <h1>مدرّبك الشخصي <span class="hl">في كاميرا هاتفك</span></h1>
         <p class="lead">«محلل الوضعيات» يحلّل وقفتك الرياضية وتمارين السكوات والبوش أب بالكاميرا لحظة بلحظة: يعدّ التكرارات الصحيحة، وينبّهك فوراً عند الخطأ، ويعطيك في النهاية تقريراً بدرجة من 100.</p>
@@ -267,6 +273,7 @@
   </main>
 
   <footer>
+    <div class="inst"><img src="img/istaps_logo.png" alt="شعار معهد علوم وتقنيات النشاطات البدنية والرياضية" onerror="this.parentNode.style.display='none'"><span><b>معهد علوم وتقنيات النشاطات البدنية والرياضية</b>جامعة العربي التبسي – تبسة</span></div>
     <p><a href="privacy.html">سياسة الخصوصية</a></p>
     <p class="en">© 2026 Posture Analyzer</p>
   </footer>
